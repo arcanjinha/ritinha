@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<title>aluguel de bot</title>
+<body>
+<h1>ALUGAR BOT</h1>
+<br>
+</body>
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv= "X-UA-Compatible" content="IE-edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./style.css">
+</head>
+<form action="obrigado.html" method="get" onsubmit="abrirWhatsapp()">
+<label for="nome"><strong>*Nome:</strong></label>
+  <input type="text" name="nome" id="nome" placeholder="Nome" required /><br />
+  <label for="nome"><strong>*Telefone:</strong></label>
+  <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required /><br />
+  <label for="nome"><strong>Email:</strong></label>
+  <input type="email" name="email" id="email" placeholder="E-mail(opcional)" /><br />
+  <textarea name="msg" id="msg" placeholder="Duração do aluguel do bot" rows="5" required></textarea><br />
+  <button type="submit">Enviar dados p/ Whatsapp</button>
+</form>
+<script>
+    function abrirWhatsapp() {
+      var nome = document.getElementById("nome").value;
+      var telefone = document.getElementById("telefone").value;
+      var email = document.getElementById("email").value;
+      var msg = document.getElementById("msg").value;
+      var url = "https://wa.me/5538998206779?text=" // Seu numero
+        + "*Formulário de Contato*" + "%0a" // Mensagem personalizada
+        + "%0a" // Quebra de linha
+        + "*Nome*: " + nome + "%0a" // Dados do formulário
+        + "*Telefone*: " + telefone + "%0a"
+        + "*E-mail*: " + email + "%0a"
+        + "*Mensagem*: " + msg;
+      window.open(url, '_blank').focus();
+    }
+</script>
+</html>
