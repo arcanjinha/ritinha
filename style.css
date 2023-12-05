@@ -19,9 +19,15 @@ body {
 }
 
 h1,
+h4,
 p,
 a {
   text-align: center;
+}
+
+h5{
+text-align: center;
+color: #dddd;
 }
 
 p {
