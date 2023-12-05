@@ -10,7 +10,7 @@
 body {
   display: grid;
   place-content: center;
-  width: 100%;
+  width: 95%;
   max-width: 390px;
   margin: 16px;
   height: 100vh;
