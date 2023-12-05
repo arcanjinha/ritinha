@@ -11,7 +11,7 @@ body {
   display: grid;
   place-content: center;
   width: 100%;
-  max-width: 400px;
+  max-width: 390px;
   margin: 16px;
   height: 100vh;
   background-color: red;
